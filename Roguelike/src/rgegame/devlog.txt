@@ -1,0 +1,143 @@
+Roguelike Game Kit Development Log
+==================================
+
+Contact: <h_malthaner@users.sourceforge.net>
+
+Changes
+=======
+
+2010/08/01
+NEW: More items.
+NEW: Walkaround demo now can generate mines and dungeon type maps.
+
+2010/07/29
+NEW: Drop action for items in walkaround demo.
+CHG: Help action can now show ctrl and shift modifiers.
+CHG: Expanded object registry with some useful methods.
+CHG: Tried to make yellow, orange, brown and copper colors
+     better distinguishable.
+
+2010/07/28
+NEW: Colors for rendering backend can be customized now.
+FIX: Wilderness generator now calculates better spawn locations.
+CHG: Pathfinding demo now uses wilderness map generator.
+CHG: Added one more color, "copper".
+
+2010/07/27
+NEW: Mines type map generator.
+NEW: All map generators now take a "seed" value in their
+     properties.
+
+2010/07/26
+FIX: Fixed feature/color code parsing in dungeon generator for
+     list structures.
+CHG: Limited player inventory in walkaround demo to 22 items.
+NEW: Added color code for light gray.
+NEW: Wilderness map generator.
+
+2010/07/25
+NEW: Added MapUtils class with map processing utility methods.
+NEW: Added insert() method for layered map class.
+NEW: Game actions now got names, e.g. to show the player a
+     comprehensive list of actions for key bindings.
+NEW: HelpAction to show a the current list of key bindings.
+     Help action is bound to F1.
+
+2010/07/22
+NEW: Added generic item data containers.
+FIX: Fixed "door" config property for dungeon generator.
+FIX: Dungeon generator can now parse color codes for brown.
+CHG: Dungeon generator can now also parse Angband style a:r codes.
+CHG: Moved part of the color code parsing into ColorCodes class.
+
+2010/07/21
+FIX: Fixed javadoc mistakes.
+NEW: Area class to find all reachable cells in an area.
+NEW: Simple player inventory for walkaround demo.
+NEW: Simple player inventory UI for walkaround demo.
+NEW: Multiple choice box can now easily be centered on a frame.
+
+2010/07/20
+CHG: Split display map from game map.
+NEW: Showcase for object registy and game items in walkaround demo.
+NEW: Added color code for brown.
+
+2010/07/19
+NEW: Object registry to link int values from maps to game objects.
+CHG: TiledMapPainter now supports a painting strategy for transparent
+     tiles, too (which need to be painted in bottom up order).
+CHG: Moved "newMap" method from MapDisplay to MapControl class.
+
+2010/07/18
+CHG: Set pathfinder demo thread to be a "daemon" thread (in order to
+     let the VM exit correctly if the pathfinding demo window was
+     closed by pressing escape).
+NEW: "PathDestination" interface for pathfinding engine. This allows
+     to check "destination reached" conditions in a very generic way.
+NEW: ASCIITilePainter got setFont() Method.
+NEW: MessageDisplayArea class in the menu package to display HTML
+     formatted game messages.
+CHG: Split MapControl class from MapDisplay class to have a better
+     separation of display and control code.
+
+2010/07/17
+NEW: Dual license, GPL + BSD style license. I hope this will make the
+     project useful to even more people.
+
+2010/07/16
+NEW: Path class can now do 8-direction and 4 direction pathfinding.
+NEW: Pathfinding demo (game.pathfindingdemo.PathfindingDemo).
+
+2010/07/14
+FIX: Fixed a bug in integer value parsing for dungeon config data.
+NEW: Number of map layers to be generated can now be handed to
+     dungeon generator via config values.
+
+2010/07/14
+NEW: First version of pathfinding. Untested (aka "don't use it yet").
+
+2010/07/13
+FIX: Multiple choice boxes are now always centered on window.
+NEW: "Stairs up" symbol in walkaround demo now generates a new map
+     if stepped onto.
+NEW: LayeredMap got "spawn position" property.
+CHG: Dungeon generator now sets "spawn position" with a suggestion
+     for player spawn position.
+CHG: Walkaround demo now uses player spawn position to set the
+     player starting location.
+
+2010/07/12
+FIX: Fixed a wrong dependency between MapDisplay and ASCIITilePainter.
+FIX: Better tracking of "ok" state for multiple choice boxes.
+CHG: Better door creation code for dungeon generator.
+NEW: Dungeon generator can now place random features inside rooms.
+NEW: Fountains for the walkaround demo and example menu code for
+     fountain use.
+NEW: Map display now tracks "visible" and "remembered" state for
+     map cells, and draw only at least "remembered" cells.
+NEW: New game action to quit the walkaround demo (Q, X, Escape).
+
+2010/07/11
+NEW: "Close" action for doors in walkaround demo.
+NEW: "Player" class in walkaround demo to keep player specific data.
+NEW: Started to work on roguelike menu system: Multiple choice box.
+NEW: Option to have map display always centered on player.
+
+2010/07/10
+NEW: Introduced FeatureCodes class with constants for dungeon features.
+NEW: Dungeon config parser can now parse char+color values.
+
+2010/07/09
+NEW: Dungeon generator now can create doors.
+NEW: Doors can be opened.
+NEW: Now 12 color codes defined.
+CHG: Removed debug output in moving.
+
+2010/07/08
+FIX: Safety check for writing FOV information.
+NEW: Map layer constants.
+NEW: Key repeat events for game actions.
+NEW: More color codes defined (@ now in cyan).
+CHG: Better handling of color codes.
+
+No older entries ...

@@ -1,0 +1,7 @@
+Roguelike Game Kit License
+--------------------------
+
+The Roguelike Game Kit is dual licensed under the GNU GENERAL
+PUBLIC LICENSE (see file gpl_v2-license.txt for details) and
+a BSD style license (see file bsd_license.txt for details.)
+
