@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-
+//Built using http://download.eclipse.org/windowbuilder/WB/release/R201209281200/4.2/
 public class Main_GUI extends JFrame {
 
 	private JPanel contentPane;
