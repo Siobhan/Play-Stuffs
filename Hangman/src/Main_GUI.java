@@ -1,24 +1,33 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JButton;
-import java.awt.Canvas;
 import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 //Built using http://download.eclipse.org/windowbuilder/WB/release/R201209281200/4.2/
 public class Main_GUI extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtGuess;
+	public static int imgPointer = 0;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -29,11 +38,20 @@ public class Main_GUI extends JFrame {
 				}
 			}
 		});
+		
+	}
+	
+	public static int getImgPointer(){
+		return imgPointer;
+	}
+	public static void setImgPointer(int i){
+		imgPointer=i;
 	}
 
 	/**
 	 * Create the frame.
 	 */
+	@SuppressWarnings("null")
 	public Main_GUI() {
 		setTitle("Hangman");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,14 +67,42 @@ public class Main_GUI extends JFrame {
 		contentPane.add(txtGuess);
 		txtGuess.setColumns(10);
 		
+		final JPanel panelHangman = new JPanel();
+		panelHangman.setToolTipText("Hangman");
+		panelHangman.setBounds(99, 11, 200, 200);
+		
+
+		
+		final ImageIcon img[] = new ImageIcon[7];
+		img[0] = new ImageIcon("src/images/Hangman_1.png");
+		img[1] = new ImageIcon("src/images/Hangman_2.png");
+		img[2] = new ImageIcon("src/images/Hangman_3.png");
+		img[3] = new ImageIcon("src/images/Hangman_4.png");
+		img[4] = new ImageIcon("src/images/Hangman_5.png");
+		img[5] = new ImageIcon("src/images/Hangman_6.png");
+		img[6] = new ImageIcon("src/images/Hangman_7.png");
+		
+		final JLabel label = new JLabel("", img[imgPointer], JLabel.CENTER);
+		panelHangman.add( label, BorderLayout.CENTER );
+		
+		
+		contentPane.add(panelHangman);
+		
+		
 		JButton btnGuess = new JButton("Guess");
+		btnGuess.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				panelHangman.removeAll();
+	            panelHangman.revalidate();
+				imgPointer++;
+				
+				label.setIcon(img[imgPointer]);
+				panelHangman.add( label, BorderLayout.CENTER );
+				
+				panelHangman.repaint();
+			}
+		});
 		btnGuess.setBounds(335, 230, 89, 23);
 		contentPane.add(btnGuess);
-		
-		Canvas canvasHangman = new Canvas();
-		canvasHangman.setBackground(Color.WHITE);
-		canvasHangman.setForeground(new Color(255, 255, 255));
-		canvasHangman.setBounds(125, 10, 200, 210);
-		contentPane.add(canvasHangman);
 	}
 }

@@ -1,10 +1,14 @@
+import java.awt.EventQueue;
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.io.StreamTokenizer;
+import javax.imageio.ImageIO;
 
 
 // dummy line to test git
 
-public class Game {
+public class Game extends Main_GUI {
 
 	public static void main(String[] args)
 	{
@@ -17,17 +21,16 @@ public class Game {
 		
 		//temp word, will come from a file or database in the end
 		String word="Love";
-//		String visibleWord="****";
 		StringBuilder visibleWord = new StringBuilder("----");
-//		String[] word={"J","a","v","a"};
-//		String[] visibleWord={"*","*","*","*"};
-		
+
+				
 		//game loop controller
 		boolean runGame = true;
 		
-
+		Main_GUI.main(null);
 		
 		word = word.toUpperCase();
+		
 		//StreamTokenizer
         StreamTokenizer Input=new StreamTokenizer(System.in); 
 		
@@ -58,9 +61,12 @@ public class Game {
 		    					visibleWord.setCharAt(i, guess.charAt(0));
 		    				}
 		            System.out.print("Is it in the word: " + guessChecker + "\n");
+		            
 //		            System.out.print(word.matches(visibleWord.toString()));
 		            if(guessChecker==false)
 		            	failures++;
+		            	int temp = Main_GUI.getImgPointer();
+		    			Main_GUI.setImgPointer(temp++);
 		            
 		            //win state
 			        if(word.matches(visibleWord.toString()))
