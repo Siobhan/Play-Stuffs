@@ -88,12 +88,13 @@ public class Main_GUI extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				panelHangman.removeAll();
 	            panelHangman.revalidate();
-				imgPointer++;
-				
-				label.setIcon(img[imgPointer]);
-				panelHangman.add( label, BorderLayout.CENTER );
-				
-				panelHangman.repaint();
+	            if(imgPointer<img.length-1)
+	            {
+					imgPointer++;
+					label.setIcon(img[imgPointer]);
+					panelHangman.add(label, BorderLayout.CENTER );
+					panelHangman.repaint();
+	            }
 			}
 		});
 		btnGuess.setBounds(335, 230, 89, 23);
