@@ -1,6 +1,5 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -12,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 //Built using http://download.eclipse.org/windowbuilder/WB/release/R201209281200/4.2/
+@SuppressWarnings("serial")
 public class Main_GUI extends JFrame {
 
 	private JPanel contentPane;

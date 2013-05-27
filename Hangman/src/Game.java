@@ -1,8 +1,7 @@
 import java.io.StreamTokenizer;
 
 
-// dummy line to test git
-
+@SuppressWarnings("serial")
 public class Game extends Main_GUI {
 
 	@SuppressWarnings("deprecation")
