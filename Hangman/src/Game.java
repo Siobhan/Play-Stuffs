@@ -1,15 +1,11 @@
-import java.awt.EventQueue;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.io.StreamTokenizer;
-import javax.imageio.ImageIO;
 
 
 // dummy line to test git
 
 public class Game extends Main_GUI {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args)
 	{
 		//declare variables
