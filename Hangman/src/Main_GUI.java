@@ -68,13 +68,13 @@ public class Main_GUI extends JFrame {
 
 		
 		final ImageIcon img[] = new ImageIcon[7];
-		img[0] = new ImageIcon("src/images/Hangman_1.png");
-		img[1] = new ImageIcon("src/images/Hangman_2.png");
-		img[2] = new ImageIcon("src/images/Hangman_3.png");
-		img[3] = new ImageIcon("src/images/Hangman_4.png");
-		img[4] = new ImageIcon("src/images/Hangman_5.png");
-		img[5] = new ImageIcon("src/images/Hangman_6.png");
-		img[6] = new ImageIcon("src/images/Hangman_7.png");
+		img[0] = new ImageIcon("Hangman_1.png");
+		img[1] = new ImageIcon("Hangman_2.png");
+		img[2] = new ImageIcon("Hangman_3.png");
+		img[3] = new ImageIcon("Hangman_4.png");
+		img[4] = new ImageIcon("Hangman_5.png");
+		img[5] = new ImageIcon("Hangman_6.png");
+		img[6] = new ImageIcon("Hangman_7.png");
 		
 		final JLabel label = new JLabel("", img[imgPointer], JLabel.CENTER);
 		panelHangman.add( label, BorderLayout.CENTER );

@@ -20,35 +20,5 @@
 			<type>1</type>
 			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_1.png</location>
 		</link>
-		<link>
-			<name>src/images/Hangman_2.png</name>
-			<type>1</type>
-			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_2.png</location>
-		</link>
-		<link>
-			<name>src/images/Hangman_3.png</name>
-			<type>1</type>
-			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_3.png</location>
-		</link>
-		<link>
-			<name>src/images/Hangman_4.png</name>
-			<type>1</type>
-			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_4.png</location>
-		</link>
-		<link>
-			<name>src/images/Hangman_5.png</name>
-			<type>1</type>
-			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_5.png</location>
-		</link>
-		<link>
-			<name>src/images/Hangman_6.png</name>
-			<type>1</type>
-			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_6.png</location>
-		</link>
-		<link>
-			<name>src/images/Hangman_7.png</name>
-			<type>1</type>
-			<location>C:/Users/Anthony/Documents/GitHub/Play-Stuffs/Hangman/src/images/Hangman_7.png</location>
-		</link>
 	</linkedResources>
 </projectDescription>

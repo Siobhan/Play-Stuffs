@@ -2,5 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="src/images/Hangman_1.png"/>
+	<classpathentry kind="lib" path="src/images/Hangman_2.png"/>
+	<classpathentry kind="lib" path="src/images/Hangman_3.png"/>
+	<classpathentry kind="lib" path="src/images/Hangman_4.png"/>
+	<classpathentry kind="lib" path="src/images/Hangman_5.png"/>
+	<classpathentry kind="lib" path="src/images/Hangman_6.png"/>
+	<classpathentry kind="lib" path="src/images/Hangman_7.png"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
